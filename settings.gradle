@@ -1,0 +1,3 @@
+rootProject.name = 'wavefront-exporting'
+
+include 'demo'
