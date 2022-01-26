@@ -2,7 +2,7 @@ management:
   metrics:
     export:
       wavefront:
-        api-token: f28e249b-156e-420c-803c-07fc48af5d26
+        api-token: ${WAVEFRONT_TOKEN}
         uri: https://vmware.wavefront.com
   endpoints:
     web:

@@ -11,23 +11,23 @@ import java.util.concurrent.TimeUnit;
 @RestController
 public class DemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 
-	@GetMapping("/throw")
-	public void throwError() {
-		throw new RuntimeException("Request Failed");
-	}
+    @GetMapping("/throw")
+    public void throwError() {
+        throw new RuntimeException("Request Failed");
+    }
 
-	@GetMapping("/slow")
-	public void slow() throws InterruptedException {
-		TimeUnit.SECONDS.sleep(1);
-	}
+    @GetMapping("/slow")
+    public void slow() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+    }
 
-	@GetMapping("/message")
-	public String message() {
-		return "Hello World";
-	}
+    @GetMapping("/message")
+    public String message() {
+        return "Hello World";
+    }
 
 }
